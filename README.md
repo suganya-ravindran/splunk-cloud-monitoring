@@ -1,11 +1,11 @@
 # Enterprise Hybrid Cloud Monitoring with Splunk
 
 ## Project Overview
-This project simulates a corporate environment where a centralized Linux Control Node monitors the health of internal Windows Web Servers. It uses custom Python automation to bypass standard ICMP blocks and feeds real-time data into Splunk Enterprise for dashboard visualization and outage detection.
+This project simulates a corporate environment where a centralized Linux Control Node monitors the health of internal Windows Web Servers. It uses custom Python automation to bypass standard ICMP (Internet Control Message Protocol) blocks and feeds real-time data into Splunk Enterprise for dashboard visualization and outage detection.
 
 ## Architecture
 - **Control Node:** Ubuntu Linux (EC2) running Splunk Enterprise & Python Automation.
-- **Target Node:** Windows Server 2022 (EC2) configured with IIS via User Data.
+- **Target Node:** Windows Server 2022 (EC2) configured with IIS (Internet Information Services) via User Data.
 - **Security:** Nodes communicate over private IPs within a VPC; Security Groups restrict traffic to internal monitoring only.
 
 ## Key Features
